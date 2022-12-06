@@ -1,1 +1,0 @@
-let s=1;i(s);function i(a){let e,l=document.getElementsByClassName("slideShow"),t=document.getElementsByClassName("dot");for(a>l.length&&(s=1),a<1&&(s=l.length),e=0;e<l.length;e++)l[e].style.display="none";for(e=0;e<t.length;e++)t[e].className=t[e].className.replace(" active","");l[s-1].style.display="block",t[s-1].className+=" active"}
