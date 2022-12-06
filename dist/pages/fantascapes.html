@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script type="module" crossorigin src="../assets/fantascapes.170fc34c.js"></script>
-    <link rel="modulepreload" crossorigin href="../assets/navslide.b6e1b205.js">
-    <link rel="modulepreload" crossorigin href="../assets/GLTFLoader.62da0a1e.js">
-    <link rel="stylesheet" href="../assets/navslide.47469cc7.css">
-    <link rel="stylesheet" href="../assets/fantascapes.0b4a86d8.css">
+    
+    <script type="module" crossorigin src="/assets/js/fantascapes-aa039919.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/js/navslide-24dee725.js">
+    <link rel="stylesheet" href="/assets/css/navslide-dc06b71d.css">
+    <link rel="stylesheet" href="/assets/css/fantascapes-0b4a86d8.css">
   </head>
   <body>
 	<div class = "page">
@@ -35,16 +35,32 @@
         </div>
         <div class = "subtitle-container" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-once = "true">Blender | Photoshop | Adobe InDesign</div>
         <br><br>
-        <div class = "subtitle-container" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-once = "true">Click and drag to view the 3d model</div>
-          <canvas class="book"></canvas>
-        
         <div class = "about-project-cont" data-aos = "fade-up">
             <div class = "title-container" style = "font-size: 4vw;" data-aos = "zoom-in" data-aos-duration = "1000" data-aos-easing = "ease-in-out">About
             </div>
             <div class = "about-project-text">"Fantascapes: Excerpts From Distant Lands" is a short book that includes 3D renderings of fantastical landscapes. Each landscape is accompanied by an excerpt from a fictional, in-universe book that gives context and a story to the landscape.
                 <br><br>This was created in my sophomore year of college in a collaborative book project with fellow students. We were tasked with creating a suite of books with the theme being fantasy.
+                <br><br><br>Hover over the right side of the book cover to get an interactive flip book.
             </div>
         </div>
+        <!-- Turn.js Book https://github.com/blasten/turn.js -->
+        <div class = "magazine-cont">
+          <div id = "magazine">
+            <div class = "hard"><img src = "../assets/images/cover-e680ccc2.jpg"></div>
+            <div class = "hard"><img src = "../assets/images/page01-98286fcb.jpg"></div>
+            <div class = "hard"><img src = "../assets/images/page02-79b82bed.jpg"></div>
+            <div class = "hard"><img src = "../assets/images/page03-5f798c1b.jpg"></div>
+            <div class = "hard"><img src = "../assets/images/page04-025406be.jpg"></div>
+            <div class = "hard"><img src = "../assets/images/page05-8e164143.jpg"></div>
+            <div class = "hard"><img src = "../assets/images/page06-9f67afc2.jpg"></div>
+            <div class = "hard"><img src = "../assets/images/page07-afef3bad.jpg"></div>
+            <div class = "hard"><img src = "../assets/images/page08-c59229a5.jpg"></div>
+            <div class = "hard"><img src = "../assets/images/page09-c527edb6.jpg"></div>
+            <div class = "hard"><img src = "../assets/images/page10-a1709f45.jpg"></div>
+            <div class = "hard"><img src = "../assets/images/backcover-e12a2ea5.jpg"></div>
+          </div>
+        </div>
+        <div class = "subtitle-container"><a href = "https://www.lulu.com/shop/craig-john-and-carlos-rosas/a-suite-of-books-visions/hardcover/product-egzk66.html?page=1&pageSize=4">Link to buy the book</a></div>
             <div class = "title-container" style = "font-size: 4vw;" data-aos = "zoom-in" data-aos-duration = "1000" data-aos-easing = "ease-in-out">Process
             </div>
             <div class = "large-image-cont">
@@ -53,31 +69,31 @@
                   <!-- Full-width images with number and caption text -->
                   <div class="slideShow fade">
                     <div class="numbertext">1 / 5</div>
-                    <img class = "zoom" id = "image" src="../assets/fant_01.png" style="height:80%; margin: auto;" data-magnify-src = "../assets/fant_01.png">
+                    <img class = "zoom" id = "image" src="../assets/images/fant_01-180dcaab.png" style="height:80%; margin: auto;" data-magnify-src = "../assets/images/fant_01-180dcaab.png">
                     <div class="text">The Tree</div>
                   </div>
                 
                   <div class="slideShow fade">
                     <div class="numbertext">2 / 5</div>
-                    <img class = "zoom" id = "image" src="../assets/fant_02.png" data-magnify-src = "../assets/fant_02.png" style="height:80%">
+                    <img class = "zoom" id = "image" src="../assets/images/fant_02-92de68f1.png" data-magnify-src = "../assets/images/fant_02-92de68f1.png" style="height:80%">
                     <div class="text">The Willow</div>
                   </div>
                   
                   <div class="slideShow fade">
                     <div class="numbertext">3 / 5</div>
-                    <img class = "zoom" id = "image" src="../assets/fant_03.png" data-magnify-src = "../assets/fant_03.png" style="height:80%">
+                    <img class = "zoom" id = "image" src="../assets/images/fant_03-a450ee06.png" data-magnify-src = "../assets/images/fant_03-a450ee06.png" style="height:80%">
                     <div class="text">The Gate</div>
                   </div>
 
                   <div class="slideShow fade">
                     <div class="numbertext">4 / 5</div>
-                    <img class = "zoom" id = "image" src="../assets/fant_04.png" data-magnify-src = "../assets/fant_04.png" style="height:80%">
+                    <img class = "zoom" id = "image" src="../assets/images/fant_04-f04c8d9b.png" data-magnify-src = "../assets/images/fant_04-f04c8d9b.png" style="height:80%">
                     <div class="text">Floating Islands</div>
                   </div>
 
                   <div class="slideShow fade">
                     <div class="numbertext">5 / 5</div>
-                    <img class = "zoom" id = "image" src="../assets/fant_05.png" data-magnify-src = "../assets/fant_05.png" style="height:80%">
+                    <img class = "zoom" id = "image" src="../assets/images/fant_05-f1731f1c.png" data-magnify-src = "../assets/images/fant_05-f1731f1c.png" style="height:80%">
                     <div class="text">The Wizard's House</div>
                   </div>
                 
@@ -100,7 +116,6 @@
           <div class = "about-project-text">Fantasy is one of my favorite genres, so I was eager to create my own fantasy world. It was important that each landscape felt distinct from one another, but could still exist within one big world; I wanted each one to have a different visual tone. The visuals of the landscapes were inspired by various fantastical worlds, including "The Lord of the Rings" and "The Witcher". 
             <br><br>The concept of including fictional book excerpts comes from Frank Herbert's science fiction novel, "Dune". Each chapter in "Dune" begins with a short passage from a book that exists in the world of "Dune", giving context and background to the events of each chapter. I thought this idea would work well for my book, as it allows the reader to get a peek into the world given how short the book is. Each passage, accompanied by the landscape, is meant to give off a different tone, showcasing how diverse the world is with its inhabitants and locations. 
           </div>
-          <div class = "subtitle-container"><a href = "https://www.lulu.com/shop/craig-john-and-carlos-rosas/a-suite-of-books-visions/hardcover/product-egzk66.html?page=1&pageSize=4">Link to buy the book</a></div>
           <br><br><br>
       </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -110,12 +125,30 @@
      <script src="https://player.vimeo.com/api/player.js"></script>
      
      
+     
      <script>
+      /* Magnify Script */
       $(document).ready(function(){
         $('.zoom').magnify();
       });
      </script>
+     
      <script>
+      /* Turn.js Script */
+      $(document).ready(function(){
+        $("#magazine").turn({
+        width: 800,
+        height: 600,
+        gradients: true,
+        acceleration: true,
+        autoCenter: true
+        });
+      });
+      
+     </script>
+     <script>
+
+      /* Slideshow Script */
         let slideIndex = 1;
         showSlides(slideIndex);
 
@@ -144,7 +177,7 @@
           slides[slideIndex-1].style.display = "block";
           dots[slideIndex-1].className += " active";
         }  
+        
     </script>
-    
   </body>
 </html>

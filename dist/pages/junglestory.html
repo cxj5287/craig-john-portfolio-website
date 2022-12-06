@@ -6,9 +6,8 @@
     <title>Jungle Story 2</title>
     
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script type="module" crossorigin src="../assets/navslide.b6e1b205.js"></script>
-    <script type="module" crossorigin src="../assets/slideshow.7ef9ed38.js"></script>
-    <link rel="stylesheet" href="../assets/navslide.47469cc7.css">
+    <script type="module" crossorigin src="../assets/js/navslide-24dee725.js"></script>
+    <link rel="stylesheet" href="../assets/css/navslide-dc06b71d.css">
   </head>
   <body>
 	<div class = "page"  style = "height: 70vw;">
@@ -27,8 +26,8 @@
             <div class = "line3"></div>
         </div>
       </nav>
-      <div class = "next-button"><a href = "thevoid.html"><img src = "../assets/chevron_right.png"></a></div>
-      <div class = "next-button" style = "left: 1vw;"><a href = "venusian_landscape.html"><img src = "../assets/chevron_left.png"></a></div>
+      <div class = "next-button"><a href = "thevoid.html"><img src = "../assets/images/chevron_right-1ee4f7ce.png"></a></div>
+      <div class = "next-button" style = "left: 1vw;"><a href = "venusian_landscape.html"><img src = "../assets/images/chevron_left-675d1b6f.png"></a></div>
         <div class = "title-container" data-aos = "zoom-in" data-aos-duration = "1000" data-aos-easing = "ease-in-out">'Jungle Story 2' Movie Poster
         </div>
         <div class = "subtitle-container" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-once = "true">Photoshop</div>
@@ -36,7 +35,7 @@
             <div class="slideshow-container" style = "max-width: 500" data-aos ="fade-up">
                 <!-- Full-width images with number and caption text -->
                 <div class="slideShow fade">
-                  <img src="../assets/jungle-story.png" style="width:100%">
+                  <img src="../assets/images/jungle-story-30150205.png" style="width:100%">
               </div>
               
         </div>
@@ -46,7 +45,36 @@
       <script>
          AOS.init();
     </script>
+    
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("slideShow");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
   </body>
-     
-     
 </html>

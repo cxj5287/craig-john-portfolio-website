@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Venusian Landscape</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
@@ -24,8 +24,8 @@
             <div class = "line3"></div>
         </div>
       </nav>
-      <div class = "next-button"><a href = "junglestory.html"><img src = "../assets/chevron_right.png"></a></div>
-      <div class = "next-button" style = "left: 1vw;"><a href = "balancing_biomes.html"><img src = "../assets/chevron_left.png"></a></div>
+      <div class = "next-button"><a href = "junglestory.html"><img src = "../images/chevron_right.png"></a></div>
+      <div class = "next-button" style = "left: 1vw;"><a href = "balancing_biomes.html"><img src = "../images/chevron_left.png"></a></div>
         <div class = "title-container" data-aos = "zoom-in" data-aos-duration = "1000" data-aos-easing = "ease-in-out">Venusian Surface
         </div>
         <div class = "subtitle-container" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-once = "true">Blender | Photoshop</div>
@@ -33,7 +33,7 @@
             <div class="slideshow-container" data-aos ="fade-up">
                 <!-- Full-width images with number and caption text -->
                 <div class="slideShow fade">
-                  <img src="../assets/Venesian_Surface.png" style="width:100%">
+                  <img src="../images/Venesian_Surface.png" style="width:100%">
               </div>
               
         </div>
@@ -43,7 +43,36 @@
       <script>
          AOS.init();
     </script>
+    <script src="../js/navslide.js" type = "module"></script>
+    <script>
+       let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("slideShow");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+        }  
+    </script>
   </body>
-     <script src = "../slideshow.js" type = "module"></script>
-     <script src="../navslide.js" type = "module"></script>
 </html>
